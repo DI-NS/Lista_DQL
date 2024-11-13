@@ -1,0 +1,61 @@
+NOME_ALUNO,NOME_DISCIPLINA
+Sr. Luiz Felipe Fogaça,Algoritmos e Estruturas de Dados
+Sr. Luiz Felipe Fogaça,Algoritmos e Estruturas de Dados
+Sr. Augusto da Conceição,Algoritmos e Estruturas de Dados
+Ana Beatriz Rocha,Algoritmos e Estruturas de Dados
+Mariana Ferreira,Algoritmos e Estruturas de Dados
+Paulo Fogaça,Algoritmos e Estruturas de Dados
+Paulo Fogaça,Algoritmos e Estruturas de Dados
+João Lucas Cardoso,Algoritmos e Estruturas de Dados
+João Lucas Cardoso,Algoritmos e Estruturas de Dados
+Sarah Gonçalves,Algoritmos e Estruturas de Dados
+Sarah Gonçalves,Algoritmos e Estruturas de Dados
+Vitor Fernandes,Algoritmos e Estruturas de Dados
+Sra. Gabriela Martins,Algoritmos e Estruturas de Dados
+Maria Eduarda Moraes,Algoritmos e Estruturas de Dados
+Maria Eduarda Moraes,Algoritmos e Estruturas de Dados
+Rebeca Barbosa,Algoritmos e Estruturas de Dados
+Juan Fernandes,Algoritmos e Estruturas de Dados
+Pedro Henrique Castro,Algoritmos e Estruturas de Dados
+Pedro Henrique Castro,Algoritmos e Estruturas de Dados
+Dra. Yasmin Souza,Algoritmos e Estruturas de Dados
+Pedro Henrique Melo,Algoritmos e Estruturas de Dados
+Levi Barbosa,Algoritmos e Estruturas de Dados
+Levi Barbosa,Algoritmos e Estruturas de Dados
+Arthur da Costa,Algoritmos e Estruturas de Dados
+Diogo Santos,Algoritmos e Estruturas de Dados
+Henrique Pires,Algoritmos e Estruturas de Dados
+Vitória Moreira,Algoritmos e Estruturas de Dados
+Vitória Moreira,Algoritmos e Estruturas de Dados
+Olivia Pires,Algoritmos e Estruturas de Dados
+João Miguel Teixeira,Algoritmos e Estruturas de Dados
+João Miguel Teixeira,Algoritmos e Estruturas de Dados
+Dr. Caio Almeida,Algoritmos e Estruturas de Dados
+João Pedro da Mata,Algoritmos e Estruturas de Dados
+Dr. Marcelo Jesus,Algoritmos e Estruturas de Dados
+Dr. Marcelo Jesus,Algoritmos e Estruturas de Dados
+Evelyn Costa,Algoritmos e Estruturas de Dados
+Bruno Duarte,Algoritmos e Estruturas de Dados
+Bianca Ramos,Algoritmos e Estruturas de Dados
+Sr. Luiz Felipe Fogaça,POO
+Sr. Luiz Felipe Fogaça,POO
+Ana Beatriz Rocha,POO
+Mariana Ferreira,POO
+João Lucas Cardoso,POO
+Sarah Gonçalves,POO
+Maria Eduarda Moraes,POO
+Levi Barbosa,POO
+Arthur da Costa,POO
+Diogo Santos,POO
+Vitória Moreira,POO
+Vitória Moreira,POO
+
+SELECT 
+    a.nome AS nome_aluno,
+    d.nome AS nome_disciplina
+FROM 
+    aluno a
+INNER JOIN 
+    matricula m ON a.id_aluno = m.id_aluno
+INNER JOIN 
+    disciplina d ON m.id_disciplina = d.id_disciplina;

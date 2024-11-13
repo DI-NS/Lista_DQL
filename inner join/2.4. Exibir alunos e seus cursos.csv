@@ -1,0 +1,63 @@
+NOME_ALUNO,NOME_CURSO
+Sr. Luiz Felipe Fogaça,Análise e Desenvolvimento de Sistemas
+Sr. Luiz Felipe Fogaça,Análise e Desenvolvimento de Sistemas
+Sr. Augusto da Conceição,Análise e Desenvolvimento de Sistemas
+Ana Beatriz Rocha,Análise e Desenvolvimento de Sistemas
+Mariana Ferreira,Análise e Desenvolvimento de Sistemas
+Paulo Fogaça,Análise e Desenvolvimento de Sistemas
+Paulo Fogaça,Análise e Desenvolvimento de Sistemas
+João Lucas Cardoso,Análise e Desenvolvimento de Sistemas
+João Lucas Cardoso,Análise e Desenvolvimento de Sistemas
+Sarah Gonçalves,Análise e Desenvolvimento de Sistemas
+Sarah Gonçalves,Análise e Desenvolvimento de Sistemas
+Vitor Fernandes,Análise e Desenvolvimento de Sistemas
+Sra. Gabriela Martins,Análise e Desenvolvimento de Sistemas
+Maria Eduarda Moraes,Análise e Desenvolvimento de Sistemas
+Maria Eduarda Moraes,Análise e Desenvolvimento de Sistemas
+Rebeca Barbosa,Análise e Desenvolvimento de Sistemas
+Juan Fernandes,Análise e Desenvolvimento de Sistemas
+Pedro Henrique Castro,Análise e Desenvolvimento de Sistemas
+Pedro Henrique Castro,Análise e Desenvolvimento de Sistemas
+Dra. Yasmin Souza,Análise e Desenvolvimento de Sistemas
+Pedro Henrique Melo,Análise e Desenvolvimento de Sistemas
+Levi Barbosa,Análise e Desenvolvimento de Sistemas
+Levi Barbosa,Análise e Desenvolvimento de Sistemas
+Arthur da Costa,Análise e Desenvolvimento de Sistemas
+Diogo Santos,Análise e Desenvolvimento de Sistemas
+Henrique Pires,Análise e Desenvolvimento de Sistemas
+Vitória Moreira,Análise e Desenvolvimento de Sistemas
+Vitória Moreira,Análise e Desenvolvimento de Sistemas
+Olivia Pires,Análise e Desenvolvimento de Sistemas
+João Miguel Teixeira,Análise e Desenvolvimento de Sistemas
+João Miguel Teixeira,Análise e Desenvolvimento de Sistemas
+Dr. Caio Almeida,Análise e Desenvolvimento de Sistemas
+João Pedro da Mata,Análise e Desenvolvimento de Sistemas
+Dr. Marcelo Jesus,Análise e Desenvolvimento de Sistemas
+Dr. Marcelo Jesus,Análise e Desenvolvimento de Sistemas
+Evelyn Costa,Análise e Desenvolvimento de Sistemas
+Bruno Duarte,Análise e Desenvolvimento de Sistemas
+Bianca Ramos,Análise e Desenvolvimento de Sistemas
+Sr. Luiz Felipe Fogaça,Análise e Desenvolvimento de Sistemas
+Sr. Luiz Felipe Fogaça,Análise e Desenvolvimento de Sistemas
+Ana Beatriz Rocha,Análise e Desenvolvimento de Sistemas
+Mariana Ferreira,Análise e Desenvolvimento de Sistemas
+João Lucas Cardoso,Análise e Desenvolvimento de Sistemas
+Sarah Gonçalves,Análise e Desenvolvimento de Sistemas
+Maria Eduarda Moraes,Análise e Desenvolvimento de Sistemas
+Levi Barbosa,Análise e Desenvolvimento de Sistemas
+Arthur da Costa,Análise e Desenvolvimento de Sistemas
+Diogo Santos,Análise e Desenvolvimento de Sistemas
+Vitória Moreira,Análise e Desenvolvimento de Sistemas
+Vitória Moreira,Análise e Desenvolvimento de Sistemas
+
+SELECT 
+    a.nome AS nome_aluno,
+    c.nome AS nome_curso
+FROM 
+    aluno a
+INNER JOIN 
+    matricula m ON a.id_aluno = m.id_aluno
+INNER JOIN 
+    disciplina d ON m.id_disciplina = d.id_disciplina
+INNER JOIN 
+    curso c ON d.id_curso = c.id_curso;

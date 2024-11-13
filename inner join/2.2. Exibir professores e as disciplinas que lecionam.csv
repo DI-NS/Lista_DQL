@@ -1,0 +1,47 @@
+NOME_PROFESSOR,NOME_DISCIPLINA
+Luiza Pinto,Algoritmos e Estruturas de Dados
+Luiza Pinto,Algoritmos e Estruturas de Dados
+Luiza Pinto,Algoritmos e Estruturas de Dados
+Luiza Pinto,Algoritmos e Estruturas de Dados
+Vinícius Vieira,Banco de Dados
+Vinícius Vieira,Banco de Dados
+Vinícius Vieira,Banco de Dados
+Vinícius Vieira,Banco de Dados
+Luiza Pinto,POO
+Luiza Pinto,POO
+Luiza Pinto,POO
+Luiza Pinto,POO
+Vinícius Vieira,Algoritmos e Estruturas de Dados
+Vinícius Vieira,Algoritmos e Estruturas de Dados
+Vinícius Vieira,Algoritmos e Estruturas de Dados
+Vinícius Vieira,Algoritmos e Estruturas de Dados
+Luiza Pinto,Banco de Dados
+Luiza Pinto,Banco de Dados
+Luiza Pinto,Banco de Dados
+Luiza Pinto,Banco de Dados
+Vinícius Vieira,POO
+Vinícius Vieira,POO
+Vinícius Vieira,POO
+Vinícius Vieira,POO
+Luiza Pinto,Algoritmos e Estruturas de Dados
+Luiza Pinto,Algoritmos e Estruturas de Dados
+Luiza Pinto,Algoritmos e Estruturas de Dados
+Luiza Pinto,Algoritmos e Estruturas de Dados
+Vinícius Vieira,Banco de Dados
+Vinícius Vieira,Banco de Dados
+Vinícius Vieira,Banco de Dados
+Vinícius Vieira,Banco de Dados
+Luiza Pinto,POO
+Luiza Pinto,POO
+Luiza Pinto,POO
+Luiza Pinto,POO
+
+SELECT 
+    p.nome AS nome_professor,
+    d.nome AS nome_disciplina
+FROM 
+    professor p
+INNER JOIN 
+    turma t ON p.id_professor = t.id_professor
+INNER JOIN 
+    disciplina d ON t.id_disciplina = d.id_disciplina;

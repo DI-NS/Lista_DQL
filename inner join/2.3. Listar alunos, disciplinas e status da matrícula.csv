@@ -1,0 +1,62 @@
+NOME_ALUNO,NOME_DISCIPLINA,STATUS_MATRICULA
+Sr. Luiz Felipe Fogaça,Algoritmos e Estruturas de Dados,Ativo
+Sr. Luiz Felipe Fogaça,Algoritmos e Estruturas de Dados,Ativo
+Sr. Augusto da Conceição,Algoritmos e Estruturas de Dados,Concluído
+Ana Beatriz Rocha,Algoritmos e Estruturas de Dados,Ativo
+Mariana Ferreira,Algoritmos e Estruturas de Dados,Ativo
+Paulo Fogaça,Algoritmos e Estruturas de Dados,Concluído
+Paulo Fogaça,Algoritmos e Estruturas de Dados,Trancado
+João Lucas Cardoso,Algoritmos e Estruturas de Dados,Ativo
+João Lucas Cardoso,Algoritmos e Estruturas de Dados,Concluído
+Sarah Gonçalves,Algoritmos e Estruturas de Dados,Concluído
+Sarah Gonçalves,Algoritmos e Estruturas de Dados,Ativo
+Vitor Fernandes,Algoritmos e Estruturas de Dados,Trancado
+Sra. Gabriela Martins,Algoritmos e Estruturas de Dados,Trancado
+Maria Eduarda Moraes,Algoritmos e Estruturas de Dados,Trancado
+Maria Eduarda Moraes,Algoritmos e Estruturas de Dados,Ativo
+Rebeca Barbosa,Algoritmos e Estruturas de Dados,Concluído
+Juan Fernandes,Algoritmos e Estruturas de Dados,Trancado
+Pedro Henrique Castro,Algoritmos e Estruturas de Dados,Trancado
+Pedro Henrique Castro,Algoritmos e Estruturas de Dados,Trancado
+Dra. Yasmin Souza,Algoritmos e Estruturas de Dados,Concluído
+Pedro Henrique Melo,Algoritmos e Estruturas de Dados,Concluído
+Levi Barbosa,Algoritmos e Estruturas de Dados,Trancado
+Levi Barbosa,Algoritmos e Estruturas de Dados,Ativo
+Arthur da Costa,Algoritmos e Estruturas de Dados,Ativo
+Diogo Santos,Algoritmos e Estruturas de Dados,Ativo
+Henrique Pires,Algoritmos e Estruturas de Dados,Trancado
+Vitória Moreira,Algoritmos e Estruturas de Dados,Ativo
+Vitória Moreira,Algoritmos e Estruturas de Dados,Ativo
+Olivia Pires,Algoritmos e Estruturas de Dados,Concluído
+João Miguel Teixeira,Algoritmos e Estruturas de Dados,Ativo
+João Miguel Teixeira,Algoritmos e Estruturas de Dados,Concluído
+Dr. Caio Almeida,Algoritmos e Estruturas de Dados,Ativo
+João Pedro da Mata,Algoritmos e Estruturas de Dados,Trancado
+Dr. Marcelo Jesus,Algoritmos e Estruturas de Dados,Trancado
+Dr. Marcelo Jesus,Algoritmos e Estruturas de Dados,Concluído
+Evelyn Costa,Algoritmos e Estruturas de Dados,Concluído
+Bruno Duarte,Algoritmos e Estruturas de Dados,Concluído
+Bianca Ramos,Algoritmos e Estruturas de Dados,Trancado
+Sr. Luiz Felipe Fogaça,POO,Ativo
+Sr. Luiz Felipe Fogaça,POO,Ativo
+Ana Beatriz Rocha,POO,Ativo
+Mariana Ferreira,POO,Ativo
+João Lucas Cardoso,POO,Ativo
+Sarah Gonçalves,POO,Ativo
+Maria Eduarda Moraes,POO,Ativo
+Levi Barbosa,POO,Ativo
+Arthur da Costa,POO,Ativo
+Diogo Santos,POO,Ativo
+Vitória Moreira,POO,Ativo
+Vitória Moreira,POO,Ativo
+
+SELECT 
+    a.nome AS nome_aluno,
+    d.nome AS nome_disciplina,
+    m.status AS status_matricula
+FROM 
+    aluno a
+INNER JOIN 
+    matricula m ON a.id_aluno = m.id_aluno
+INNER JOIN 
+    disciplina d ON m.id_disciplina = d.id_disciplina;
